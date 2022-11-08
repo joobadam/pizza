@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,400;1,600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+
+html {
+  font-size: calc(60% + 0.8vmin);
+}
+
+body {
+  width: 100%;
+}
+
+#root {
+  width: 100%;
+  height: 100vh;
+}
+
+.us {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.us .logo {
+  font-size: 3rem;
+  text-shadow: 5px 2px 5px;
+}
+
+#container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(248, 120, 98);
+}
+
+.formbox {
+  height: 100vh;
+  width: 70%;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  height: 90vh;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 40px;
+}
+
+input {
+  width: 60%;
+  height: 5vh;
+  margin: 10px;
+  border-radius: 20px;
+  border: 1px solid gray;
+  text-align: center;
+}
+
+#submit {
+  background-color: rgb(255, 255, 18);
+  border: none;
+  color: black;
+  font-size: 1.5rem;
+  width: 40%;
+  height: 8vh;
+}
+
+#submit:hover {
+  background-color: skyblue;
+  color: white;
+}
+
+#cart-icon {
+  width: 70px;
+  height: 70px;
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  z-index: 2;
+}
+
+.cart-content {
+  position: fixed;
+  top: 0%;
+  right: 0;
+  width: 30%;
+  height: 100%;
+  background-color: gainsboro;
+  border-radius: 20% 0 0 60%;
+  transform: translateX(100%);
+  transition: transform 0.8s cubic-bezier(1, 0, 0, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 140px 0 0 30px;
+}
+.cart-content h2 {
+  font-size: 3rem;
+}
+
+.menu-active {
+  transform: translateX(0);
+}
+
+.line {
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background-color: black;
+  transition: all 0.8s;
+}
+
+.change .line1 {
+  transform: rotateZ(-405deg) translate(-18px, 16px);
+}
+
+.change .line2 {
+  opacity: 0;
+}
+
+.change .line3 {
+  transform: rotateZ(405deg) translate(-18px, -16px);
+}
+
+.pizza {
+  max-width: 60%;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10px 0px 10px 0px;
+}
+.pizza .pizza-img {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+}
+.pizza .pizza-text {
+  width: 50%;
+}
+.pizza .pizza-text p {
+  margin: 20px 0 20px 0;
+}
+.pizza .pizza-text h3 {
+  margin: 20px 0 60px 0;
+}
+.pizza .pizza-text button {
+  width: 300px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(248, 120, 98);
+  color: white;
+  font-size: 1.3rem;
+}/*# sourceMappingURL=style.css.map */
